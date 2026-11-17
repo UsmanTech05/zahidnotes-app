@@ -252,7 +252,7 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
           ),
-          const BannerAdWidget(),
+      
         ],
       ),
     );
