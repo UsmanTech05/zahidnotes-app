@@ -1,0 +1,51 @@
+name: zahidnotes_app
+description: >-
+  ZahidNotes — 9th, 10th, 1st Year aur 2nd Year (Punjab Board) ke liye Notes,
+  Test Papers, MCQs, Pairing Scheme, Guess Papers, Smart Syllabus aur Online
+  Tests. Saara data zahidnotes.com se live aata hai (WordPress REST API), is
+  liye website par update karte hi app mein bhi update ho jata hai.
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is a private app.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.0
+  flutter: ">=3.35.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # WordPress REST API se data lene ke liye
+  http: ^1.4.0
+  # Post ka HTML content app ke andar dikhane ke liye
+  flutter_html: ^3.0.0
+  # Quiz Maker quizzes (web quizzes) app ke andar kholne ke liye
+  webview_flutter: ^4.13.0
+  # PDF / Drive links bahar browser mein kholne ke liye
+  url_launcher: ^6.3.2
+  # Google AdMob ads (IDs abhi PLACEHOLDER / TEST hain — README dekhein)
+  google_mobile_ads: ^6.0.0
+  # Favourites aur offline saved posts ke liye
+  shared_preferences: ^2.5.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  # Launcher icon banane ke liye: `dart run flutter_launcher_icons`
+  flutter_launcher_icons: ^0.14.0
+
+# Launcher icon config (assets/icon/icon.png se banta hai)
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/icon/icon.png"
+  min_sdk_android: 21
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icon/icon.png
