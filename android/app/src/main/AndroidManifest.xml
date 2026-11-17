@@ -1,5 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
-    <!-- Internet: website se live data (WordPress REST API) ke liye -->
+    <!-- Internet: website se live data (WordPress REST API) ke liye.
+         NOTE: fresh Flutter 3.50 template mein ye permissions nahi hoti;
+         old project se li gayi hain, warna app ka live data nahi chalega. -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
@@ -7,12 +9,6 @@
         android:label="ZahidNotes"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
-        <!-- Google AdMob App ID.
-             ⚠️ Ye Google ka OFFICIAL TEST App ID hai (placeholder).
-             Apne AdMob account ka asli App ID yahan lagayein (README dekhein). -->
-        <meta-data
-            android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-3940256099942544~3347511713" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -40,9 +36,8 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
-        <!-- NOTE (Usman, 2026-11-17): Impeller (Flutter ka naya graphics engine)
-             kuch low-end phones (jaise Infinix HOT 40i, Mali GPU) par launch par
-             crash karta hai. Ise band karke purana Skia engine use kar rahe hain. -->
+        <!-- Impeller band: Flutter ka naya graphics engine kuch low-end phones
+             (jaise Infinix HOT 40i, Mali GPU) par launch par crash karta hai. -->
         <meta-data
             android:name="io.flutter.embedding.android.EnableImpeller"
             android:value="false" />
