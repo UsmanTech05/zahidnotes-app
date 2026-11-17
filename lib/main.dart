@@ -5,8 +5,7 @@ import 'theme/app_theme.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  // AdMob initialize — agar fail ho to bhi app chalni chahiye.
-  await AdsService.init();
+
   runApp(const ZahidNotesApp());
 }
 
