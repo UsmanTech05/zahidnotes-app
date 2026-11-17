@@ -27,7 +27,7 @@ dependencies:
   # PDF / Drive links bahar browser mein kholne ke liye
   url_launcher: ^6.3.2
   # Google AdMob ads (IDs abhi PLACEHOLDER / TEST hain — README dekhein)
-  google_mobile_ads: ^6.0.0
+  google_mobile_ads: ^7.0.0
   # Favourites aur offline saved posts ke liye
   shared_preferences: ^2.5.3
 
